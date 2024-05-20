@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poleras</title>
+    <link rel="stylesheet" href="Index.css">
+    <!-- Agregar icono de la pestaña del navegador -->
+    <link rel="icon" href="subli/unamed.png.JPG" type="image/jpeg">
+    <!-- Opcionalmente, puedes agregar también el icono para dispositivos Apple -->
+    <link rel="apple-touch-icon" href="subli/apple-touch-icon.png">
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript de Bootstrap (necesario para el funcionamiento del carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="subli/unamed.png.JPG" alt="Logo">
+        </a>
+        <img src="subli/Captura_de_pantalla_2024-04-03_131455-removebg-preview.png" alt="Titulo" class="title-image">
+        <input id="icon-search--input" class="header-mobile-search__input" type="text" value="" placeholder="¿Qué quieres buscar?" autocomplete="off" autocapitalize="off" aria-invalid="false" onkeydown="searchHandler(event)">
+        <script src="js/buscador.js">
+        </script>
+        <div class="cart-container">
+            <a href="carrito.html">
+                <img src="subli/carro-removebg-preview.png" alt="Carrito de Compras" class="carrito-image"> 
+            </a>
+        </div>
+        <div class="login-register-container">
+            <a href="Registro.html" class="btn btn-primary">Iniciar sesión / Registrarse</a>
+        </div>
+    </header>
+        
+    <!-- Barra de tareas -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Carcasas.html" id="navbarDropdownTazas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Carcasas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTazas">
+                            <li><a class="dropdown-item" href="Carcasas.html">Carcasas</a></li>
+                            <li><a class="dropdown-item" href="Personalizado.html">Personalizado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Poleras.html" id="navbarDropdownPoleras" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Poleras
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownPoleras">
+                            <li><a class="dropdown-item" href="poleras.html">Poleras</a></li>
+                            <li><a class="dropdown-item" href="Personalizado.html">Personalizado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Cojines.html" id="navbarDropdownCojines" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cojines
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCojines">
+                            <li><a class="dropdown-item" href="cojines.html">Cojines</a></li>
+                            <li><a class="dropdown-item" href="Personalizado.html">Personalizado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="BolsaTote.html" id="navbarDropdownBolsaTote" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Bolsas Reutilizables
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCojines">
+                            <li><a class="dropdown-item" href="BolsaTote.html">Bolsas Reutilizables</a></li>
+                            <li><a class="dropdown-item" href="Personalizado.html">Personalizado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Informaciones.html">Informaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        
+    <!-- Aquí empieza el código HTML -->
+    <div class="container text-center mt-4">
+        <h1>POLERAS</h1>
+        <p class="lead">AQUI ENCONTRARÁS POLERAS PARA PERSONALIZAR CON TU FOTO O IMAGEN QUE QUIERAS</p>
+    </div>
+
+    <!-- Aquí comienza el segundo código -->
+    <!-- Contenedor para centrar los productos -->
+<div class="container">
+    <div class="row justify-content-center">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="row row-cols-1 row-cols-md-3 g-4"></main>             
+    </div>
+</div>
+<!-- Aquí termina el segundo código -->
+       
+    <!-- Aquí empieza el código JavaScript -->
+    <script src="js/poleras.js">
+    </script>
+<!-- Aquí termina el código JavaScript -->
+
+      <!-- Contenedor para el contenido adicional -->
+      <div class="additional-content">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>TIENDA SUBLIMAC.CL - Tienda en linea de personalizados en Chile</p>
+                    <p>SÍGUENOS</p>
+                </div>
+                <div class="col">
+                    <p>TERMINOS LEGALES</p>
+                    <p>DESPACHOS</p>
+                    <p>FORMAS DE PAGO</p>
+                    <p>TÉRMINOS Y CONDICIONES</p>
+                </div>
+                <div class="col">
+                    <p>CONTÁCTANOS</p>
+                    <p>sublimac_shop@gmail.com</p>
+                    <p>+56985677646</p>
+                    <p>+56971795262</p>
+                    <p>Tienda en línea, Santiago de Chile</p>
+                    <p>Lunes a Viernes de 9:30 a 20:00 horas</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>ÚNETE PARA NOVEDADES</p>
+                    <input type="email" placeholder="Tu correo">
+                    <button type="button">ENVIAR</button>
+                </div>
+                <div class="col">
+                    <p>MÉTODOS DE PAGO ACEPTADOS</p>
+                    <!-- Imágenes de tarjetas de crédito y débito -->
+                    <div class="accepted-payment-methods">
+                        <img src="subli/Visa.png" alt="Visa">
+                        <img src="subli/Mastercard.png" alt="Mastercard">
+                        <img src="subli/Amex.png" alt="American Express">
+                        <img src="subli/Paypal.png" alt="Paypal">
+                        <!-- Y así sucesivamente para otras tarjetas -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Tienda Sublimac.CL - Tienda en linea de personalizados en Chile 2024. Todos los derechos reservados.</p>
+                    <p>Powered by Jumpseller.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+          <script src="js/carrito.js"></script>
+      
+      </body>
+      </html>
+
+
+
+

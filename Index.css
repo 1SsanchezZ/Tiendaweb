@@ -1,0 +1,395 @@
+body {
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: aqua; /* Color de fondo del navbar */
+  padding: 10px; /* Ajusta el relleno del navbar */
+}
+
+.navbar a {
+  color: black; /* Color del texto de los enlaces en el navbar */
+  margin-right: 20px; /* Espacio entre los elementos del navbar */
+  text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
+}
+
+.navbar a:hover {
+  color: gray; /* Color del texto de los enlaces al pasar el mouse */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  text-align: left; /* Alinea el contenido del encabezado a la derecha */
+  background-color: black; /* Color de fondo del encabezado */
+  padding: 20px;
+}
+
+#titulo {
+  color: white; /* Color del texto del título */
+  font-size: 36px; /* Tamaño de fuente del título */
+}
+
+.buscar {
+  background-color: white;
+  text-align: center;
+}
+
+input {
+  width: 195px;
+  padding: 8px; /* Ajusta el relleno del input según tus preferencias */
+  font-size: 16px; /* Tamaño de fuente del input */
+  border: 1px solid #ccc; /* Borde del input */
+  border-radius: 4px; /* Borde redondeado */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 90px; /* Ajusta el tamaño de la imagen del logo */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  margin-right: 10px; /* Espacio entre la imagen del logo y el texto */
+  border-radius: 50%; /* Hace que la imagen tenga bordes redondeados */
+}
+
+.cart-container img {
+  margin-left: 0px;
+  width: 100px; /* Ajusta el tamaño de la imagen del carrito */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  border: none; /* Elimina el borde de la imagen */
+  animation-name: cartLoading;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.title-image {
+  margin-right: 100px;
+  margin-left: 5px;
+  width: 346px; /* Ajusta el ancho de la imagen del título */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+.navbar .navbar-nav .nav-item.dropdown {
+  margin-right: 10px; /* Ajusta el margen derecho según tus preferencias */
+  margin-left: 10px;
+}
+.navbar .navbar-nav .nav-item.dropdown #icon-search--input {
+  width: 300px; /* Ajusta el ancho según tus preferencias */
+}
+
+/* contenido adicional */
+
+.additional-content {
+  background-color: #000000;
+  color: #afa1a1;
+  padding: 20px;
+  text-align: center;
+}
+
+.additional-content p {
+  margin: 10px 0;
+}
+
+.additional-content input[type="email"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.additional-content button {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+.additional-content button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Estilos para las imágenes de tarjetas de crédito y débito */
+.accepted-payment-methods img {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+/* Estilos para el título "TERMINOS Y CONDICIONES" */
+.elementor-widget-container .woodmart-title-container {
+  text-align: center; /* Centra el texto */
+  margin-top: 30px; /* Ajusta el margen superior según sea necesario */
+  margin-bottom: 30px; /* Ajusta el margen inferior según sea necesario */
+}
+
+/* Estilos para los párrafos y otros elementos dentro del contenedor */
+.elementor-widget-container p,
+.elementor-widget-container strong {
+  margin-bottom: 20px; /* Ajusta el margen inferior entre párrafos */
+}
+
+/* Estilos para los títulos */
+.elementor-widget-container h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Cambia el tipo de letra */
+  font-size: 24px; /* Tamaño de fuente para los títulos */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los párrafos */
+.elementor-widget-container p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Cambia el tipo de letra */
+  font-size: 16px; /* Tamaño de fuente para los párrafos */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilos para los elementos strong */
+.elementor-widget-container strong {
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los párrafos dentro del contenedor */
+.elementor-widget-container p {
+  text-align: justify; /* Alinea el texto justificado */
+  margin-bottom: 20px; /* Ajusta el margen inferior entre párrafos */
+}
+
+/* Estilos para el contenedor principal */
+.elementor-widget-container {
+  padding: 40px; /* Añade un padding interno al contenedor principal */
+}
+
+.advertisement-container {
+  display: flex; /* Utilizamos flexbox para centrar verticalmente */
+  justify-content: center; /* Centramos horizontalmente */
+  height: 100px; /* Altura del contenedor */
+}
+
+.advertisement-image {
+  width: 100%; /* Limitamos el ancho máximo de la imagen */
+  height: auto; /* Mantenemos la proporción */
+  display: block; /* Evitamos que la imagen se extienda más allá del contenedor */
+  margin: 0 auto; /* Centramos horizontalmente */
+}
+
+/* Estilos para el formulario de registro */
+#registroForm {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#registroForm h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#registroForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#registroForm input[type="text"],
+#registroForm input[type="email"],
+#registroForm input[type="date"],
+#registroForm input[type="password"],
+#registroForm select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#registroForm p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+#registroForm button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#registroForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el enlace de inicio de sesión */
+a[href="inicio_sesion.html"] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a[href="inicio_sesion.html"]:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para centrar los productos */
+.container {
+  text-align: center;
+}
+
+#items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+  /* Estilos para el pie de página */
+#foot {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme a lo largo del contenedor */
+}
+
+.footer-col {
+  margin-bottom: 20px; /* Ajusta el margen inferior entre las columnas del footer */
+}
+
+.footer-col p {
+  margin-bottom: 10px; /* Ajusta el margen inferior entre los párrafos dentro de las columnas del footer */
+}
+
+.social-networks {
+  list-style: none; /* Elimina los puntos de lista */
+  padding: 0; /* Elimina el relleno predeterminado */
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+.social-icon {
+  display: inline-block; /* Para que los iconos se muestren en línea */
+  margin-right: 10px; /* Espacio entre los iconos de redes sociales */
+  color: #007bff; /* Color de los iconos */
+  text-decoration: none; /* Quita el subrayado de los iconos */
+}
+
+.social-icon:hover {
+  color: #0056b3; /* Cambia el color al pasar el mouse sobre los iconos */
+}
+
+/* Agrega tus estilos personalizados aquí */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+input[type="file"] {
+  margin-top: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+
+/* Estilo para la tarjeta */
+.card {
+  margin-bottom: 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 2.5rem;
+}
+      
+/* Estilo para la imagen dentro de la tarjeta */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+      
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
+  padding: 20px;
+}
+      
+/* Estilo para el título de la tarjeta */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+      
+/* Estilo para el texto de la tarjeta */
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+      
+/* Estilo para el botón "Comprar" */
+.btn-primary {
+  width: 100%;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+      
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}

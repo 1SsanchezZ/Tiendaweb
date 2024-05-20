@@ -1,0 +1,162 @@
+body {
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: aqua; /* Color de fondo del navbar */
+  padding: 10px; /* Ajusta el relleno del navbar */
+}
+
+.navbar a {
+  color: black; /* Color del texto de los enlaces en el navbar */
+  margin-right: 20px; /* Espacio entre los elementos del navbar */
+  text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
+}
+
+.navbar a:hover {
+  color: gray; /* Color del texto de los enlaces al pasar el mouse */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  text-align: left; /* Alinea el contenido del encabezado a la derecha */
+  background-color: black; /* Color de fondo del encabezado */
+  padding: 20px;
+}
+
+#titulo {
+  color: white; /* Color del texto del título */
+  font-size: 36px; /* Tamaño de fuente del título */
+}
+
+.buscar {
+  background-color: white;
+  text-align: center;
+}
+
+input {
+  width: 195px;
+  padding: 8px; /* Ajusta el relleno del input según tus preferencias */
+  font-size: 16px; /* Tamaño de fuente del input */
+  border: 1px solid #ccc; /* Borde del input */
+  border-radius: 4px; /* Borde redondeado */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 90px; /* Ajusta el tamaño de la imagen del logo */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  margin-right: 10px; /* Espacio entre la imagen del logo y el texto */
+  border-radius: 50%; /* Hace que la imagen tenga bordes redondeados */
+}
+
+.cart-container img {
+  margin-left: 0px;
+  width: 100px; /* Ajusta el tamaño de la imagen del carrito */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  border: none; /* Elimina el borde de la imagen */
+  animation-name: cartLoading;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.title-image {
+  margin-right: 220px;
+  margin-left: 368px;
+  width: 346px; /* Ajusta el ancho de la imagen del título */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+.navbar .navbar-nav .nav-item.dropdown {
+  margin-right: 10px; /* Ajusta el margen derecho según tus preferencias */
+  margin-left: 10px;
+}
+
+/* contenido adicional */
+
+.additional-content {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.additional-content p {
+  margin: 10px 0;
+}
+
+.additional-content input[type="email"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.additional-content button {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+.additional-content button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Estilos para las imágenes de tarjetas de crédito y débito */
+.accepted-payment-methods img {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+
+
+/* Estilos para el título "TERMINOS Y CONDICIONES" */
+.elementor-widget-container .woodmart-title-container {
+  text-align: center; /* Centra el texto */
+  margin-top: 30px; /* Ajusta el margen superior según sea necesario */
+  margin-bottom: 30px; /* Ajusta el margen inferior según sea necesario */
+}
+
+/* Estilos para los párrafos y otros elementos dentro del contenedor */
+.elementor-widget-container p,
+.elementor-widget-container strong {
+  margin-bottom: 20px; /* Ajusta el margen inferior entre párrafos */
+}
+
+/* Estilos para los títulos */
+.elementor-widget-container h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Cambia el tipo de letra */
+  font-size: 24px; /* Tamaño de fuente para los títulos */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los párrafos */
+.elementor-widget-container p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Cambia el tipo de letra */
+  font-size: 16px; /* Tamaño de fuente para los párrafos */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilos para los elementos strong */
+.elementor-widget-container strong {
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los párrafos dentro del contenedor */
+.elementor-widget-container p {
+  text-align: justify; /* Alinea el texto justificado */
+  margin-bottom: 20px; /* Ajusta el margen inferior entre párrafos */
+}
+
+/* Estilos para el contenedor principal */
+.elementor-widget-container {
+  padding: 40px; /* Añade un padding interno al contenedor principal */
+}
